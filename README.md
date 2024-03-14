@@ -21,5 +21,11 @@
 - Day 10: [TBD](TBD)
 
 ### Code examples
-- Snake Game
-- Basic Chatbot 
+- [Snake Game 1](demos/snake_game_from_harsitbaral/main.py)
+- [Snake Game 2](demos/snake_game_from_coder_space/main.py)
+- [Tetris](TBD)
+- [TBD](TBD)
+- [TBD](TBD)
+- [Basic Chatbot - no smart](TBD) 
+- [Chatbot a bit smarter](TBD)
+- [Chatbot smart - using chatGPT](TBD)
