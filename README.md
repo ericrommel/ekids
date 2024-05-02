@@ -10,10 +10,10 @@
 
 ### Presentations
 - Day  1: [Introduction to Python](https://sway.cloud.microsoft/PnBTyw8RcTFNYWlq)
-- Day  2: [Python Basics Part 1](TBD)
-- Day  3: [Python Basics Part 2](TBD)
-- Day  4: [Python Basics Part 3](TBD)
-- Day  5: [TBD](TBD)
+- Day  2: [Python Basics Part 1](material/Day%202%20Introduction%20to%20Python%20Basics%20Part%202%C2%A0.pptx)
+- Day  3: [Python Basics Part 2](material/Day%202%20Introduction%20to%20Python%20Basics%20Part%202%C2%A0.pptx)
+- Day  4: [Loop structure](material/Python_Repetition_Structures.pptx)
+- Day  5: [Loop structure](material/Python_Repetition_Structures.pptx)
 - Day  6: [TBD](TBD)
 - Day  7: [TBD](TBD)
 - Day  8: [TBD](TBD)
@@ -23,9 +23,5 @@
 ### Code examples
 - [Snake Game 1](demos/snake_game_from_harsitbaral/main.py)
 - [Snake Game 2](demos/snake_game_from_coder_space/main.py)
-- [Tetris](TBD)
-- [TBD](TBD)
-- [TBD](TBD)
-- [Basic Chatbot - no smart](TBD) 
-- [Chatbot a bit smarter](TBD)
-- [Chatbot smart - using chatGPT](TBD)
+- [Tetris Game](TBD)
+- [Word Search Game](demos/word_search_game/word_search.py)

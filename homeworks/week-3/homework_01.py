@@ -24,3 +24,4 @@ def number_pyramid(rows):
 # ToDo: Ask user to type a number
 number = int(input("Enter the number: "))
 number_pyramid(number)
+
