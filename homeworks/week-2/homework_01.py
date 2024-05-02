@@ -9,3 +9,5 @@ if __name__ == '__main__':
     first_number = int(input("Enter first number: "))
     second_number = int(input("Enter second number: "))
     sum_numbers(first_number, second_number)
+
+#поменяли
