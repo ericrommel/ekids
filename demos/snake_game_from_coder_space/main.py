@@ -26,7 +26,7 @@ while True:
         if event.type == pg.QUIT:
             exit()
         if event.type == pg.KEYDOWN:
-            if event.key == pg.K_w and dirs[pg.pg.K_w]:
+            if event.key == pg.K_w and dirs[pg.K_w]:
                 snake_dir = (0, -TILE_SIZE)
                 dirs = {pg.K_w: 1, pg.K_s: 0, pg.K_a: 1, pg.K_d: 1}
             if event.key == pg.K_s and dirs[pg.K_s]:
@@ -40,7 +40,8 @@ while True:
                 dirs = {pg.K_w: 1, pg.K_s: 1, pg.K_a: 0, pg.K_d: 1}
     screen.fill('black')
     # check borders and self-eating
-    self_eating = pg.Rect.collidelist(snake, segments[:-1]) != 1
+    self_eating = snake.collidelist(segments[:-1]) != -1
+
     if snake.left < 0 or snake.right > WINDOW or snake.top < 0 or snake.bottom > WINDOW or self_eating:
         snake.center, food.center = get_random_position(), get_random_position()
         length, snake_dir = 1, (0, 0)
