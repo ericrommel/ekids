@@ -1,7 +1,7 @@
 # Make a program that asks for two integers and prints out the sum of those two numbers.
 def sum_numbers(n, m):
     # ToDo: write your code here
-    print(f'\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe answer is: {n + m}')
+    print(f'\n\n{'-'*50}\nThe answer is: {n + m}')
 
 if __name__ == '__main__':
     # ToDo: Ask user to provide the values and store them in variables.
