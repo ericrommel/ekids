@@ -15,13 +15,13 @@ def number_pyramid(rows):
     print("Number Pyramid:")
     for i in range(1, rows + 1):
         # ToDo: Print spaces to center-align the pyramid
-        print()
+        print(" " * (rows - i), end="")
         # ToDo: Print numbers in increasing order
         for j in range(1, i + 1):
-            print(1, 2, 3, 4, 5, sep=" ")
+            print(j, end=" ")
+        print()
 
 
 # ToDo: Ask user to type a number
 number = int(input("Enter the number: "))
 number_pyramid(number)
-
