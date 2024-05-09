@@ -98,9 +98,9 @@ def draw_hangman(errors):
 
 
 def the_hangman_game():
-    words = # ToDo: Define the list of words for the game. At least 5 single words
+    words = list['apple', 'banana', 'peach', 'coconut', 'water'] # ToDo: Define the list of words for the game. At least 5 single words
 
-    secret_word = # ToDo: Pick a random word from the list. Hint: random.choice()
+    secret_word = random.choice(words)# ToDo: Pick a random word from the list. Hint: random.choice()
 
     # Initialize guessed word to display blanks
     guessed_word = "_" * len(secret_word)
@@ -125,7 +125,7 @@ def the_hangman_game():
         print(draw_hangman(attempts))
         print(" ".join(guessed_word_list))  # Display the current state of the guessed word
         print("Guessed letters:", " ".join(guessed_letters))
-        guess = # ToDo: Prompt the player to guess a letter
+        guess = input('Write a letter you guess is in: ')# ToDo: Prompt the player to guess a letter
 
         # ToDo: Validate what the user entered
         if YOUR_CONDITION_HERE:

@@ -1,7 +1,10 @@
-# Make a program that asks for two integers and prints out the sum of those two numbers.
-def sum_numbers(n, m):
-    # ToDo: write your code here
+print("Hello this is the programm that sums your two numbers!")
+n1 = input("Enter number one. ")
+n1 = int(n1)
+n2 = input("Enter number two. ")
+n2 = int(n2)
+total = n1 + n2
+print(f"You total is", total)
 
-if __name__ == '__main__':
-    # ToDo: Ask user to provide the values and store them in variables.
-    sum_numbers(first_number, second_number)
+user_fav_game = input("Enter your favourite game: ")
+print(f"Your  favourite game is", user_fav_game)

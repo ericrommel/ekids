@@ -1,24 +1,13 @@
-"""
-In this game, we'll create a number pyramid where each row contains increasing numbers. E.g.: If user types 5, the game
-prints:
-
-Number Pyramid:
-    1
-   1 2
-  1 2 3
- 1 2 3 4
-1 2 3 4 5
-"""
-
-
 def number_pyramid(rows):
     print("Number Pyramid:")
+    max_width = len(str(rows))
+
     for i in range(1, rows + 1):
-        # ToDo: Print spaces to center-align the pyramid
-        print()
+        spaces = ' ' * ((rows - i) * max_width)# ToDo: Print spaces to center-align the pyramid
+        print(spaces, end=' ')
         # ToDo: Print numbers in increasing order
         for j in range(1, i + 1):
-            print()
+            print(f'{j:>{max_width}}', end='  ')
 
-number = # ToDo: Ask user to type a number
+number = int(input('Enter a number please: '))# ToDo: Ask user to type a number
 number_pyramid(number)
