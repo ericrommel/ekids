@@ -98,9 +98,10 @@ def draw_hangman(errors):
 
 
 def the_hangman_game():
-    words = list['apple', 'banana', 'peach', 'coconut', 'water'] # ToDo: Define the list of words for the game. At least 5 single words
+    words = ['apple', 'banana', 'peach', 'coconut', 'water'] # ToDo: Define the list of words for the game. At least 5 single words
 
-    secret_word = random.choice(words)# ToDo: Pick a random word from the list. Hint: random.choice()
+    secret_word = random.choice(words)
+    # ToDo: Pick a random word from the list. Hint: random.choice()
 
     # Initialize guessed word to display blanks
     guessed_word = "_" * len(secret_word)
@@ -121,26 +122,26 @@ def the_hangman_game():
 
     # Change all the 'YOUR_CONDITION_HERE' below for...
     # ToDo: Loop until the player guesses the word or runs out of attempts
-    while YOUR_CONDITION_HERE:
+    while (''.join(guessed_word_list) != secret_word) and (attempts < max_attempts) :
         print(draw_hangman(attempts))
         print(" ".join(guessed_word_list))  # Display the current state of the guessed word
         print("Guessed letters:", " ".join(guessed_letters))
-        guess = input('Write a letter you guess is in: ')# ToDo: Prompt the player to guess a letter
+        guess = input('Write a letter you guess is in: ') # ToDo: Prompt the player to guess a letter
 
         # ToDo: Validate what the user entered
-        if YOUR_CONDITION_HERE:
+        if len(guess) != 1 or not guess.isalpha():
             print("Invalid input. Please enter a single letter.")
             continue
 
         # ToDo: Check if the guessed letter has already been guessed
-        if YOUR_CONDITION_HERE:
+        if guess in guessed_word_list:
             print("You've already guessed that letter. Try another one.")
             continue
 
         guessed_letters.append(guess)  # Add guessed letter to list of guessed letters
 
         # ToDo: Check if the guessed letter is in the secret word
-        if YOUR_CONDITION_HERE:
+        if guess in secret_word:
             print("Correct guess!")
             # Update the guessed word with the correctly guessed letter
             for i in range(len(secret_word)):
@@ -148,16 +149,17 @@ def the_hangman_game():
                     guessed_word_list[i] = guess
         else:
             print("Incorrect guess.")
+            print(attempts, max_attempts)
             attempts += 1
 
         # ToDo: Check if the player has guessed the entire word
-        if YOUR_CONDITION_HERE:
+        if ''.join(guessed_word_list) == secret_word:
             print("Congratulations! You've guessed the word!")
             print("The word was:", secret_word)
             break
 
     # ToDo: If the player runs out of attempts
-    if YOUR_CONDITION_HERE:
+    if attempts >= max_attempts:
         print(draw_hangman(attempts))
         print("Sorry, you've run out of attempts!")
         print("The word was:", secret_word)
