@@ -8,7 +8,7 @@ def encrypt(word):
         ascii_number = ord(i)
         new_number = ascii_number + key
         if new_number in range(65, 91):
-            new_number = new_number - 26
+            new_number = new_number - 26  # Finish the code so that it doesn't decrypt to "%" for example
         new_character = chr(new_number)
         new_word = new_word + new_character
     return new_word
