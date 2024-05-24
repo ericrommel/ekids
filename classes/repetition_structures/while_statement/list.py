@@ -24,3 +24,10 @@ print(f"The last 3 items from the list are: {my_list[:-3]}")
 print(f"The last 3 items from the list are: {my_list[1::2]}")
 #for i in my_list:
 #    print(i)
+
+"""
+HOMEWORK
+
+do 5 operations that appear after my_list.
+
+"""
