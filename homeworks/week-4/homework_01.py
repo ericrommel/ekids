@@ -37,9 +37,9 @@ while True:
     while True:
         playerMove = input('Enter your move: (r)ock (p)aper (s)cissors or (q)uit: ')
         if playerMove == 'q':
-            # ToDo: Quit the program
+        # ToDo: Quit the program
         if playerMove == 'r' or playerMove == 'p' or playerMove == 's':
-            # ToDo: Break out of the player input loop
+ # ToDo: Break out of the player input loop
         print('Type one of r, p, s, or q.')
 
     # Display what the player chose:
