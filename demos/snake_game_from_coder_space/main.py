@@ -55,11 +55,8 @@ while True:
     # draw snake
     [pg.draw.rect(screen, 'green', segment) for segment in segments]
     # move snake
-    time_now = pg.time.get_ticks()
-    if time_now - time > time_step:
-        time = time_now
-        snake.move_ip(snake_dir)
-        segments.append(snake.copy())
-        segments = segments[-length:]
+    # You need to provide a value for time_now here
+
+    # Update display
     pg.display.flip()
-    clock.tick(60)
+    clock.tick(60)  # Limit frame rate to 60 FPS
